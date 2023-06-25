@@ -170,7 +170,7 @@ audio {
 #bar button {
     display: flex;
     align-items: center;
-    width: 86px;
+    width: 90px;
     border: solid #134991;
     border-radius: 5px;
     background-color: white;
