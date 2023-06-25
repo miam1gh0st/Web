@@ -1,6 +1,6 @@
 <template>
     <header id="page_header">
-      <h1>读书笔记</h1>
+      <h1>💻读书笔记</h1>
       <nav>
         <ul>
           <RouterLink to="/MainPage" class="top">HomePage</RouterLink>

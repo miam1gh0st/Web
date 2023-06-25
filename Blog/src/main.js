@@ -23,6 +23,7 @@ import RadioPage from './components/RadioPage.vue'
 
 import FirstPage from './components/postpage/FirstPage.vue'
 import SecondPage from './components/postpage/SecondPage.vue'
+import ThirdPage from './components/postpage/ThirdPage.vue'
 
 
 
@@ -42,6 +43,7 @@ const routes = [
 
     { path: '/postpage/FirstPage', component: FirstPage },
     { path: '/postpage/SecondPage', component: SecondPage },
+    { path: '/postpage/ThirdPage', component: ThirdPage },
 ]
 
 const router = createRouter({

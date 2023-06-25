@@ -70,18 +70,20 @@ import Calendar from 'react-calendar';
 
       <header>
         <h2>*********************************************************************************<br>
-          致我的朋友们</h2>
+          ⭐致我的朋友们</h2>
         <p>m1ng post in
           <time datetime="2023-06-12T10:20">June 20th, 2023 at 10:21AM</time>
         </p>
       </header>
       
       <h3>
-        The most important thing is must be patient.<br>
-        Everything you can do just moving on, one day you will arrive.
+        错误和挫折教训了我们，使我们比较地聪明起来了，我们的事情就办得好一些。<br>
+        任何政党，任何个人，错误总是难免的，我们要求犯得少一点。<br>
+         犯了错误则要求改正，改正得越迅速，越彻底，越好。<br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;———— 毛泽东
       </h3>
       <footer>
-        <p><a herf="comments"><i>14 comments</i></a></p>
+        <p><a herf="comments"><i>101 comments<RouterLink to="./postpage/ThirdPage" class="top">详情</RouterLink></i></a></p>
       </footer>
 
 <br>
@@ -128,20 +130,6 @@ import Calendar from 'react-calendar';
 <script>
 export default {
   name: 'MainPage',
-  MyApp() {
-    const [value, setValue] = useState(new Date());
-
-    function onChange(nextValue) {
-      setValue(nextValue);
-    }
-
-    return (
-      <Calendar
-        onChange={onChange}
-        value={value}
-      />
-    );
-    },
   data() {
     return {
       count: 0,

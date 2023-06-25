@@ -1,6 +1,6 @@
 <template>
     <header id="page_header">
-      <h1>技术经验</h1>
+      <h1>🌏技术经验</h1>
       <nav>
         <ul>
           <RouterLink to="/MainPage" class="top">HomePage</RouterLink>
