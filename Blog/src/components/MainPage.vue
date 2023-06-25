@@ -1,3 +1,6 @@
+import React, { useState } from 'react';
+import Calendar from 'react-calendar';
+
 <template>
   
   <header id="page_header">
@@ -36,7 +39,7 @@
         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;————《孟子·告子下》
       </h3>
       <footer>
-        <p><a herf="comments"><i>14 comments</i></a></p><RouterLink to="./postpage/FirstPage" class="top">详情</RouterLink>
+        <p><a herf="comments"><i>14 comments<RouterLink to="./postpage/FirstPage" class="top">详情</RouterLink></i></a></p>
   
       </footer>
 <br>
@@ -45,7 +48,7 @@
 
       <header>
         <h2>*********************************************************************************<br>
-            技术经验</h2>
+            🌏技术经验</h2>
         <p>m1ng post in
           <time datetime="2023-06-12T10:20">June 20th, 2023 at 10:21AM</time>
         </p>
@@ -59,14 +62,15 @@
         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;———— Pinia 中文文档
       </h3>
       <footer>
-        <p><a herf="comments"><i>14 comments</i></a></p>
+        <p><a herf="comments"><i>33 comments<RouterLink to="./postpage/SecondPage" class="top">详情</RouterLink></i></a></p>
       </footer>
 
 <br>
 <br>
 
       <header>
-        <h2>To my lil friend</h2>
+        <h2>*********************************************************************************<br>
+          致我的朋友们</h2>
         <p>m1ng post in
           <time datetime="2023-06-12T10:20">June 20th, 2023 at 10:21AM</time>
         </p>
@@ -124,17 +128,31 @@
 <script>
 export default {
   name: 'MainPage',
+  MyApp() {
+    const [value, setValue] = useState(new Date());
+
+    function onChange(nextValue) {
+      setValue(nextValue);
+    }
+
+    return (
+      <Calendar
+        onChange={onChange}
+        value={value}
+      />
+    );
+    },
   data() {
     return {
-      count: 0
+      count: 0,
     }
   },
-
-
-
-
 }
 </script>
+
+
+
+
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>

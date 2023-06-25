@@ -9,6 +9,8 @@ pinia.use(piniaPersist)
 app.use(pinia)
 
 
+
+
 import App from './App.vue'
 import AboutMe from './components/AboutMe.vue'
 import MainPage from './components/MainPage.vue'
@@ -20,6 +22,7 @@ import WelcomePage from './components/WelcomePage.vue'
 import RadioPage from './components/RadioPage.vue'
 
 import FirstPage from './components/postpage/FirstPage.vue'
+import SecondPage from './components/postpage/SecondPage.vue'
 
 
 
@@ -38,6 +41,7 @@ const routes = [
 
 
     { path: '/postpage/FirstPage', component: FirstPage },
+    { path: '/postpage/SecondPage', component: SecondPage },
 ]
 
 const router = createRouter({

@@ -1,4 +1,3 @@
-
 <script setup>
 import { ref, getCurrentInstance } from 'vue'
 import AddMusic from '../components/AddMusic.vue'
@@ -59,6 +58,7 @@ const update = () =>{
         
       </ul>
     </nav>
+    <h1 style="text-align:center">放首歌轻松轻松吧:P</h1>
   </header>
     <div id="container">
         <AddMusic @addMusic="editMusic" @cancel="editUIToggle" v-show="isShowAdd"></AddMusic>
@@ -91,11 +91,11 @@ const update = () =>{
                     <th width="50px">操作</th>
                 </tr>
                 <tr v-for="item in musicList" :key="item" id="musicItem">
-                    <td>{{ item.id }}</td>
-                    <td>{{ item.title }}</td>
-                    <td>{{ item.singer }}</td>
-                    <td>{{ item.uploader }}</td>
-                    <td id="operation">
+                    <td style="text-align:center">{{ item.id }}</td>
+                    <td style="text-align:center">{{ item.title }}</td>
+                    <td style="text-align:center">{{ item.singer }}</td>
+                    <td style="text-align:center">{{ item.uploader }}</td>
+                    <td  style="text-align:center" id="operation">
                         <a>播放 </a>
                         <a @click="edit(item.id)">编辑 </a>
                         <a @click="del(item.id)">删除</a>
@@ -110,6 +110,9 @@ const update = () =>{
 </template>
 
 <style>
+#container{
+    margin-top: 50px;
+}
 #musicList {
     width: 80%;
     margin: auto;
