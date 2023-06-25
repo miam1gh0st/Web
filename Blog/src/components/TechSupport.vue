@@ -3,7 +3,7 @@
     <h1>TechSupport</h1>
     <nav>
       <ul>
-        <RouterLink to="/" class="top">HomePage</RouterLink>
+        <RouterLink to="/MainPage" class="top">HomePage</RouterLink>
         <RouterLink to="/AboutMe" class="top">About me</RouterLink>
         <RouterLink to="/TechSupport" class="top">TechSupport</RouterLink>
       </ul>
@@ -11,69 +11,28 @@
   </header>
 
   <div>
-    <Card
-      v-for="(card, index) in cards"
-      :key="index"
-      :cardData="card"
-      
-    />
+    <iframe src="http://mirrors.zju.edu.cn/" />
   </div>
+  
 
 
 </template>
 
 <script>
 
-import Card from './LittleCard.vue';
 
-    export default{
-        name:"TechSupport",
-        components: {Card,
-        },
-        data() {
-          return {
-            cards: 
-            [
-              'card 1',
-              'card 2',
-              'card 3',
-            ],
-          };
-        },
-    }
-    
 </script>
 
-<style scoped>
-
-.card {
-  margin-left:450px;
-  margin-top:100px;
-  width: 200px;
-  height: 200px;
-  background-color: #ddd;
-  text-align: center;
-  padding: 50px;
-  position: absolute;
-  animation: slideUpDown 0.3s ease-in-out alternate;
+<style>
+iframe {
+    width: 100%;
+    height: 1000px;
+    border: none;
 }
 
-@keyframes slideUpDown {
-  from {
-    transform: translateY(-100px);
-  }
-  to{
-    transform: translateY(0);
-  }
+#page_header {
+  width: 100%;
 }
-
-
-
-
-
-
-
-
 
 #page_header>nav>ul,
 #page_footer>nav>ul {
@@ -92,5 +51,5 @@ import Card from './LittleCard.vue';
   padding: 0;
   display: inline;
 }
-
 </style>
+

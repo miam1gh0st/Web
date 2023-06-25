@@ -3,14 +3,14 @@
     <h1>About Me</h1>
     <nav>
       <ul>
-        <RouterLink to="/" class="top">HomePage</RouterLink>
+        <RouterLink to="/MainPage" class="top">HomePage</RouterLink>
         <RouterLink to="/AboutMe" class="top">About me</RouterLink>
         <RouterLink to="/TechSupport" class="top">TechSupport</RouterLink>
       </ul>
     </nav>
   </header>
 
-  <button id="btn" style="background: rgb(0, 21, 255);">让它着火</button>
+  <button id="btn" style="background: rgb(0, 21, 255);">Link Start !!</button>
 </template>
  
  
@@ -45,8 +45,8 @@ export default {
 }
 
 #btn {
-  margin-left: 500px;
-  margin-top: 200px;
+  margin-left: 850px;
+  margin-top: 300px;
 }
 
 * {

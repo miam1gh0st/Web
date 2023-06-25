@@ -3,7 +3,7 @@
     <h1>LifeStyle</h1>
     <nav>
       <ul>
-        <RouterLink to="/" class="top">HomePage</RouterLink>
+        <RouterLink to="/MainPage" class="top">HomePage</RouterLink>
         <RouterLink to="/AboutMe" class="top">About me</RouterLink>
         <RouterLink to="/TechSupport" class="top">TechSupport</RouterLink>
         

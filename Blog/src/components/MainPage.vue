@@ -5,49 +5,58 @@
     <h1>m1ng's blog :D</h1>
     <nav>
       <ul>
-        <RouterLink to="/" class="top">HomePage</RouterLink>
+        <RouterLink to="/MainPage" class="top">HomePage</RouterLink>
         <RouterLink to="/AboutMe" class="top">About me</RouterLink>
         <RouterLink to="/TechSupport" class="top">TechSupport</RouterLink>
         
       </ul>
     </nav>
   </header>
-  <a href="https://github.com/nbtca">NBTCA</a>
+  <section id="sider">
+    <a href="https://github.com/nbtca">NBTCA</a>
   <button @click="count++">{{ count }}</button>
-  
   <RouterLink to="/LoginSheet" class="top">Login</RouterLink>
+  </section>
+  
   
 
   <section id="posts">
     <article class="post">
       <header>
         <br>
-        <h2>Viewpost</h2>
+        <h2>*********************************************************************************<br>
+            💻读书笔记</h2>
         <p>m1ng post in
           <time datetime="2023-06-12T10:20">June 20th, 2023 at 10:21AM</time>
         </p>
       </header>
       
       <h3>
-        The most important thing is must be patient.<br>
-        Everything you can do just moving on, one day you will arrive.
+        天将降大任于是人也，必先苦其心志，劳其筋骨，饿其体肤，空乏其身，行拂乱其所为。<br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;————《孟子·告子下》
       </h3>
       <footer>
-        <p><a herf="comments"><i>14 comments</i></a></p>
+        <p><a herf="comments"><i>14 comments</i></a></p><RouterLink to="./postpage/FirstPage" class="top">详情</RouterLink>
+  
       </footer>
+<br>
 <br>
 <br>
 
       <header>
-        <h2>Second Posts</h2>
+        <h2>*********************************************************************************<br>
+            技术经验</h2>
         <p>m1ng post in
           <time datetime="2023-06-12T10:20">June 20th, 2023 at 10:21AM</time>
         </p>
       </header>
       
       <h3>
-        The most important thing is must be patient.<br>
-        Everything you can do just moving on, one day you will arrive.
+        Pinia 是 Vue 的存储库，它允许您跨组件/页面共享状态。 <br>
+        如果您熟悉 Composition API，您可能会认为您已经可以通过一个简单的 export const state = reactive({}). <br>
+        这对于单页应用程序来说是正确的，但如果它是服务器端呈现的，会使您的应用程序暴露于安全漏洞。 <br>
+        但即使在小型单页应用程序中，您也可以从使用 Pinia 中获得很多好处<br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;———— Pinia 中文文档
       </h3>
       <footer>
         <p><a herf="comments"><i>14 comments</i></a></p>
@@ -100,7 +109,7 @@
       </aside>
     <nav>
       <ul>
-        <RouterLink to="/" class="top">HomePage</RouterLink>
+        <RouterLink to="/RadioPage" class="top">Radio</RouterLink>
         <RouterLink to="/TeamMember" class="top">Team</RouterLink>
         <RouterLink to="/AboutMe" class="top">Security</RouterLink>
         <RouterLink to="/LifeStyle" class="top">Lifestyle</RouterLink>
@@ -137,6 +146,9 @@ p,
 li {
   line-height: 20px;
 }
+#sider{
+  margin-left: 1250px;
+}
 
 #page_header {
   width: 100%;
@@ -162,7 +174,8 @@ li {
 
 #posts {
   float: left;
-  width: 74%;
+  width: 64%;
+  margin-left: 50px;
 }
 
 #posts aside {
