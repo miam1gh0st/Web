@@ -21,6 +21,9 @@ import TeamMember from './components/TeamMember.vue'
 import WelcomePage from './components/WelcomePage.vue'
 import RadioPage from './components/RadioPage.vue'
 
+
+
+
 import FirstPage from './components/postpage/FirstPage.vue'
 import SecondPage from './components/postpage/SecondPage.vue'
 import ThirdPage from './components/postpage/ThirdPage.vue'
@@ -39,6 +42,7 @@ const routes = [
     { path: '/TeamMember', component: TeamMember },
     { path: '/', component: WelcomePage },
     { path: '/RadioPage', component: RadioPage },
+  
 
 
     { path: '/postpage/FirstPage', component: FirstPage },

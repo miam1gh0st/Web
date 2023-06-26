@@ -1,4 +1,5 @@
-<template>
+<template> 
+  <div class="WelcomePage" :style = "WelcomePage">
     <header id="page_header">
     <h1>Login</h1>
     <nav>
@@ -23,13 +24,32 @@
             </p>
         </form>
     </section>
+        
+    </div>
+    
 </template>
 <script>
     export default{
-        name:"LoginSheet"
+        name:"LoginSheet",
+        data(){
+            return{
+            msg: '',
+            WelcomePage: {
+                    backgroundImage:"url(" + require("../assets/KirbyFriends.jpg") + ")"
+        }
+        }
+        
+    }
+    
     }
 </script>
 <style scoped>
+.WelcomePage{
+    width:100%;
+    height:100%;  /**宽高100%是为了图片铺满屏幕 **/
+    z-index:-1;
+    position: absolute;
+  }
     #mainpage{
         margin-top: 150px;
         text-align: center;

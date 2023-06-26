@@ -2,9 +2,6 @@
     <div class="WelcomePage" :style = "WelcomePage">
         <button id="btn" @click="jump" style="background: rgb(255, 255, 255) ;">欢迎访问小明的博客:D</button>
     </div>
-    
-        
-    
   </template>
    
    

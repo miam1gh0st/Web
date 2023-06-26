@@ -9,8 +9,9 @@
       </ul>
     </nav>
   </header>
-
-  <button id="btn" style="background: rgb(0, 21, 255);">Link Start !!</button>
+  <div>
+    <iframe src="../click/click.html" />
+  </div>
 </template>
  
  

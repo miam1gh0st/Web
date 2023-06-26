@@ -1,6 +1,3 @@
-import React, { useState } from 'react';
-import Calendar from 'react-calendar';
-
 <template>
   
   <header id="page_header">
@@ -11,6 +8,7 @@ import Calendar from 'react-calendar';
         <RouterLink to="/MainPage" class="top">HomePage</RouterLink>
         <RouterLink to="/AboutMe" class="top">About me</RouterLink>
         <RouterLink to="/TechSupport" class="top">TechSupport</RouterLink>
+        <RouterLink to="/Calendar" class="top">Calendar</RouterLink>
         
       </ul>
     </nav>
@@ -103,7 +101,12 @@ import Calendar from 'react-calendar';
         <li><a herf="2023/03">March 2023</a></li>
         <li><a herf="2023/02">Febrary 2023</a></li>
         <li><a herf="all">more</a></li>
+        <br>
+        <br>
       </ul>
+      <div >
+        <iframe class="calendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%233F51B5&ctz=Asia%2FSingapore&showTitle=0&showPrint=0&showTz=0&src=Yzg1MTMwODM4MEBnbWFpbC5jb20&src=Nzc0OGU4ODc1MTIyZmIyY2I2ZmQwZTAxYTRkNTU4OWQzNzY2ZTllMTI0MWEyMGE2ODg2YTQ3NTgyYWQxMGQzY0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=emgtY24uc2luZ2Fwb3JlI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%237986CB&color=%23F4511E&color=%2333B679&color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
     </nav>
   </section>
 
@@ -144,6 +147,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.calendar{
+  height:500px;
+}
+
 p {
   margin: 0 0 20px 0;
 }
