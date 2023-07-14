@@ -8,7 +8,7 @@
         <RouterLink to="/MainPage" class="top">HomePage</RouterLink>
         <RouterLink to="/AboutMe" class="top">About me</RouterLink>
         <RouterLink to="/TechSupport" class="top">TechSupport</RouterLink>
-        <RouterLink to="/Calendar" class="top">Calendar</RouterLink>
+        <RouterLink to="/Calendar" class="top">MyCollege</RouterLink>
         
       </ul>
     </nav>
