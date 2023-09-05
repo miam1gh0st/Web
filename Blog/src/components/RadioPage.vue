@@ -58,7 +58,7 @@ const update = () =>{
         
       </ul>
     </nav>
-    <h1 style="text-align:center">放首歌轻松轻松吧:P</h1>
+    <h1 style="text-align:center">🎵放首歌轻松轻松吧:P</h1>
   </header>
     <div id="container">
         <AddMusic @addMusic="editMusic" @cancel="editUIToggle" v-show="isShowAdd"></AddMusic>
