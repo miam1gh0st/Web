@@ -9,15 +9,16 @@
         <RouterLink to="/AboutMe" class="top">About me</RouterLink>
         <RouterLink to="/TechSupport" class="top">TechSupport</RouterLink>
         <RouterLink to="/Calendar" class="top">MyCollege</RouterLink>
-        
+
       </ul>
     </nav>
-  </header>
-  <section id="sider">
-    <a href="https://github.com/nbtca">NBTCA</a>
-  <button @click="count++">{{ count }}</button>
-  <RouterLink to="/LoginSheet" class="top">Login</RouterLink>
+    <section id="sider">
+      <a href="https://github.com/nbtca">NBTCA</a>
+      <button @click="count++">{{ count }}</button>
+      <RouterLink to="/LoginSheet" class="top">Login</RouterLink>
   </section>
+  </header>
+  
   
   
 
@@ -25,8 +26,7 @@
     <article class="post">
       <header>
         <br>
-        <h2>*********************************************************************************<br>
-            💻读书笔记</h2>
+        <h2>💻读书笔记</h2>
         <p>m1ng post in
           <time datetime="2023-06-12T10:20">June 20th, 2023 at 10:21AM</time>
         </p>
@@ -34,7 +34,7 @@
       
       <h3>
         天将降大任于是人也，必先苦其心志，劳其筋骨，饿其体肤，空乏其身，行拂乱其所为。<br>
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;————《孟子·告子下》
+        ————《孟子·告子下》
       </h3>
       <footer>
         <p><a herf="comments"><i>14 comments<RouterLink to="./postpage/FirstPage" class="top">详情</RouterLink></i></a></p>
@@ -45,8 +45,7 @@
 <br>
 
       <header>
-        <h2>*********************************************************************************<br>
-            🌏技术经验</h2>
+        <h2>🌏技术经验</h2>
         <p>m1ng post in
           <time datetime="2023-06-12T10:20">June 20th, 2023 at 10:21AM</time>
         </p>
@@ -57,7 +56,7 @@
         如果您熟悉 Composition API，您可能会认为您已经可以通过一个简单的 export const state = reactive({}). <br>
         这对于单页应用程序来说是正确的，但如果它是服务器端呈现的，会使您的应用程序暴露于安全漏洞。 <br>
         但即使在小型单页应用程序中，您也可以从使用 Pinia 中获得很多好处<br>
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;———— Pinia 中文文档
+        ———— Pinia 中文文档
       </h3>
       <footer>
         <p><a herf="comments"><i>33 comments<RouterLink to="./postpage/SecondPage" class="top">详情</RouterLink></i></a></p>
@@ -67,8 +66,7 @@
 <br>
 
       <header>
-        <h2>*********************************************************************************<br>
-          ⭐致我的朋友们</h2>
+        <h2>⭐致我的朋友们</h2>
         <p>m1ng post in
           <time datetime="2023-06-12T10:20">June 20th, 2023 at 10:21AM</time>
         </p>
@@ -78,7 +76,7 @@
         错误和挫折教训了我们，使我们比较地聪明起来了，我们的事情就办得好一些。<br>
         任何政党，任何个人，错误总是难免的，我们要求犯得少一点。<br>
          犯了错误则要求改正，改正得越迅速，越彻底，越好。<br>
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;———— 毛泽东
+         ———— 毛泽东
       </h3>
       <footer>
         <p><a herf="comments"><i>101 comments<RouterLink to="./postpage/ThirdPage" class="top">详情</RouterLink></i></a></p>
@@ -141,10 +139,6 @@ export default {
 }
 </script>
 
-
-
-
-
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .calendar{
@@ -160,18 +154,24 @@ li {
   line-height: 20px;
 }
 #sider{
-  margin-left: 1250px;
+  margin-left: 70%;
 }
 
 #page_header {
   width: 100%;
 }
 
-#page_header>nav>ul,
+#page_header>nav>ul
 #page_footer>nav>ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  position: fixed; /* 使用固定定位 */
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 50px; /* 底部元素的高度 */
+      background-color: #f5f5f5;
+      text-align: center;
+      line-height: 50px;
+      font-size: 14px;
 }
 
 .top{
